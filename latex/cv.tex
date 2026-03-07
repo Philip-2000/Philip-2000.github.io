@@ -1,0 +1,99 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+\usepackage{enumitem, graphicx, hyperref}
+\usepackage{xcolor}
+\usepackage{eso-pic,transparent}
+
+\AddToShipoutPicture{
+    \AtPageLowerLeft{
+        \raisebox{0.25\paperheight}{ % Adjust this value to change the vertical position
+            \hspace{0.1\paperwidth} % Adjust this value to change the horizontal position
+            \includegraphics[width=0.80\paperwidth]{logo 素材.jpg} % Replace with your background image file
+        }
+    }
+}
+
+\begin{document}
+
+\pagestyle{empty}
+
+\begin{center}
+    \begin{minipage}{0.75\textwidth}
+        {\LARGE \textbf{Curriculum Vitae}}\\ %Date of Birth: 2000.02.04\\  % I don't want to show DOB, which shows that I am too old
+        {\large Name: Liang Yue \\ Email: yueliang200024@gmail.com \\ Phone: 17801014228 }\\
+        {\large GitHub: \href{https://github.com/Philip-2000}{https://github.com/Philip-2000} }
+    \end{minipage}
+    \begin{minipage}{0.20\textwidth}
+        \begin{flushright}
+            \includegraphics[width=2.0cm]{IMG_2160.jpg} % Replace "yourphoto.jpg" with your actual photo file name
+        \end{flushright}
+    \end{minipage}
+\end{center}
+
+\hrule
+
+\section*{Education}
+
+\noindent \textbf{Tsinghua University, Department of Computer Science and Technology}\\
+\textit{Master of Science in Computer Science} \hfill {Expected Graduation: June 2025}\\
+Advised by Professor Song-Hai Zhang, conducting research on "Digital 3D Indoor Scene Construction Algorithms" in the Graphics and Geometric Computing Laboratory.
+
+\vspace{0.5em}
+\noindent \textbf{Peking University, School of Information Science and Technology}\\
+\textit{Bachelor of Science in Computer Science, Double Major in Physics} \hfill {Graduation: June 2022}\\
+Relevant Courses: Mathematical Analysis, Computer Graphics, Artificial Intelligence, Operating Systems, etc.\\
+
+\hrule
+
+\section*{Publications}
+\begin{itemize}[leftmargin=*]
+    \item Liang Yue, Hao Tan, Junkai Huang, Shao-Kui Zhang. \textbf{A Survey on Digital 3D Indoor Scene Construction}, Journal of Image and Graphics, 2024.
+    \item Shao-Kui Zhang, Junkai Huang, Liang Yue, Jia-Tong Zhang, Jia-Hong Liu, Yu-Kun Lai, Song-Hai Zhang. \textbf{SceneExpander: Real-Time Scene Synthesis for Interactive Floor Plan Editing}, ACM Multimedia, 2024. \href{https://dl.acm.org/doi/10.1145/3664647.3680798}{doi:10.1145/3664647.3680798}
+    \item Liang Yue, Shao-kui Zhang, Lin Yuan, Yi-tao Chen, Zi-rui Zhou, Song-Hai Zhang. \textbf{Synthesizing 3D Scenes via Diffusion Model that Incorporates Indoor Scene Characteristics}, ACM Multimedia, 2025. \href{https://dl.acm.org/doi/10.1145/3746027.3754832}{doi:10.1145/3746027.3754832}
+    \item Shao-kui Zhang, Liang Yue, Han-xi Zhu, Hao-ran Zhang, Song-Hai Zhang. \textbf{SceneCluster: Interactive Scene Synthesis by Clustering Groups of Furniture Objects}, IEEE TVCG, 2025. \href{https://ieeexplore.ieee.org/document/11260934}{doi:10.1109/TVCG.2025.3634829}
+\end{itemize}
+
+\hrule
+
+\section*{Internships}
+\begin{itemize}[leftmargin=*]
+    \item Tsinghua University, College of Artificial Intelligence — Research Intern (Advisor: Miao Liu). 2025-06 -- Present.
+    \item Kunlun Skyworks — Project: World Model. 2025-07 -- 2025-09. (Finetuning navigation world model; evaluation on familiar / half-familiar / unfamiliar scenes.)
+    \item RayNeo Smart Glasses (TCL) — Project: Personal Egocentric Video Assistant. 2025-10 -- Present. (Memory construction and retrieval for QA.)
+\end{itemize}
+
+\hrule
+
+\section*{Projects}
+
+\vspace{0.5em}
+\textbf{Finetuning Multimodal Large Language Model with Egocentric Video Data}\\
+Enhancing the model's capability in understanding and reasoning about first-person visual information through egocentric video data. (2026-01 -- till now)\\
+
+\vspace{0.5em}
+\noindent \textbf{Personal Egocentric Video Assistant}\\
+Developing a personal egocentric video assistant system with a focus on memory construction and retrieval for question answering. (2025-10 -- till now)\\
+
+\vspace{0.5em}
+\noindent \textbf{Finetuning Navigation World Model with New Datasets}\\
+Finetuning the Navigation World Model using the SEKAI navigation dataset and evaluating its performance across familiar, half-familiar, and unfamiliar scenes. (2025-07 -- 2025-09)\\
+
+\vspace{0.5em}
+\noindent \textbf{Field-based Indoor Scene Optimization Methods}\\
+Integrated features like physical constraints and layout rationality into a guiding "field" for object layout optimization. (2024-11 -- 2025-04)\\
+
+\vspace{0.5em}
+\noindent \textbf{Semantics for Indoor Scene Layout and Dataset Augmentation}\\
+Digital indoor scenes are complex data structures; we model semantics such as "object relationships" and "functional groups" to expand indoor scene datasets for training deep generative models. (2024-07 -- 2024-11)\\
+
+\hrule
+
+\section*{Research Interests}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Augmented Reality.} Next generation of Human Computer Interaction.
+    \item \textbf{3D Computer Vision.} Mixture of Virtual and Real World.
+    \item \textbf{Computer Graphics.} Digital Content Creation and Interaction.
+\end{itemize}
+
+
+\end{document}

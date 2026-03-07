@@ -1,0 +1,253 @@
+{
+    "name": "Liang Yue",
+    "gender": "Male",
+    "email": "yueliang200024@gmail.com",
+    "phone": "17801014228",
+    "github": "https://github.com/Philip-2000",
+    "ORCID": "0009-0006-2683-7441",
+    "summary": "Currently interning at RayNeo, TCL.",
+    "location": {
+      "address": "TCL Research, Shenzhen, Guangdong, China",
+      "postalCode": "518000",
+      "city": "ShenZhen",
+      "countryCode": "CN",
+      "region": "Guangdong"
+    },
+    "education": {
+        "master": {
+            "degree": "Master of Science in Computer Science",
+            "university": "Tsinghua University, Dept. of Computer Science and Technology",
+            "advisor": "Song-Hai Zhang",
+            "research_topic": "Digital 3D Indoor Scene Construction Algorithms",
+            "graduation": "2025-06"
+        },
+        "bachelor": {
+            "degree": "Bachelor of Science in Computer Science (Double Major in Physics)",
+            "university": "Peking University, School of Information Science and Technology",
+            "graduation": "2022-06"
+        }
+    },
+    "internship":[
+        {
+            "affiliation": "Tsinghua University, College of Artificial Intelligence",
+            "advisor": "Miao Liu",
+            "starting": "2025-06",
+            "ending": "till now",
+            "role": "Research Intern"
+        },
+        {
+            "affiliation": "Kunlun Skyworks",
+            "starting": "2025-07",
+            "ending": "2025-09",
+            "project": "World Model",
+            "details": "Finetuning Navigation World Model with new navigation datasets, evaluating and comparing its performance on familiar / half-familiar / unfamiliar scenes."
+        },
+        {
+            "affiliation": "RayNeo Smart Glasses, TCL",
+            "starting": "2025-10",
+            "ending": "till now",
+            "project": "Personal Egocentric Video Assitant",
+            "details": "Building a personal egocentric video assistant system, focusing on memory. It support memory construction, and memory retrieval for question answering."
+        }
+    ],
+    "publications": [
+        {
+            "authors": "Liang Yue, Hao Tan, Junkai Huang, Shao-Kui Zhang",
+            "title": "A Survey on Digital 3D Indoor Scene Construction",
+            "venue": "Journal of Image and Graphics",
+            "year": 2024
+        },
+        {
+            "authors": "Shao-Kui Zhang, Junkai Huang, Liang Yue, Jia-Tong Zhang, Jia-Hong Liu, Yu-Kun Lai, Song-Hai Zhang",
+            "title": "SceneExpander: Real-Time Scene Synthesis for Interactive Floor Plan Editing",
+            "venue": "ACM Multimedia",
+            "link": "https://dl.acm.org/doi/10.1145/3664647.3680798",
+            "DOI": "10.1145/3664647.3680798",
+            "year": 2024
+        },
+        {
+            "authors": "Liang Yue, Shao-kui Zhang, Lin Yuan, Yi-tao Chen, Zi-rui Zhou, Song-Hai Zhang",
+            "title": "Synthesizing 3D Scenes via Diffusion Model that Incorporates Indoor Scene Characteristics",
+            "venue": "ACM Multimedia",
+            "link": "https://dl.acm.org/doi/10.1145/3746027.3754832",
+            "DOI": "10.1145/3746027.3754832",
+            "year": 2025
+        },
+        {
+            "authors": "Shao-kui Zhang, Liang Yue, Han-xi Zhu, Hao-ran Zhang, Song-Hai Zhang",
+            "title": "SceneCluster: Interactive Scene Synthesis by Clustering Groups of Furniture Objects",
+            "venue": "TVCG",
+            "link": "https://ieeexplore.ieee.org/document/11260934",
+            "DOI": "10.1109/TVCG.2025.3634829",
+            "year": 2025
+        }
+    ],
+    "projects": [
+        {
+            "title": "Finetuning Multimodal Large Language Model with Egocentric Video Data",
+            "description": "Finetuning Multimodal Large Language Model with egocentric video data to enhance its capability in understanding and reasoning about first-person visual information.",
+            "starting": "2026-01",
+            "ending": "till now"
+        },
+        {
+            "title": "Personal Egocentric Video Assitant",
+            "description": "Building a personal egocentric video assistant system, focusing on memory. It support memory construction, and memory retrieval for question answering.",
+            "starting": "2025-10",
+            "ending": "till now"
+        },
+        {
+            "title": "Finetuning Navigation World Model with New Datasets",
+            "description": "Finetuning Navigation World Model with new navigation datasets, evaluating and comparing its performance on familiar / half-familiar / unfamiliar scenes.",
+            "starting": "2025-07",
+            "ending": "2025-09"
+        },
+        {
+            "title": "Field-based Indoor Scene Optimization Methods",
+            "description": "We integrate multiple features such as \"physical constraints\" and \"layout rationality\" within indoor scenes to construct a \"field\" that guides object layout optimization.",
+            "starting": "2024-11",
+            "ending": "2025-04"
+        },
+        {
+            "title": "Semantics for Indoor Scene Layout and Dataset Augmentation",
+            "description": "Digital indoor scenes are complex data structures, and current datasets lack sufficient quantity and diversity to support the training of deep generative models. We aim to model semantics such as \"object relationships\" and \"functional groups\" in indoor scenes to expand the existing indoor scene datasets, enhancing their effectiveness in training deep generative models.",
+            "starting": "2024-07",
+            "ending": "2024-11"
+        }
+    ],
+    "project_other":[
+        {
+
+        }
+    ],
+    "skills": [
+        "Computer Graphics: Three.js, OpenGL",
+        "Machine Learning: PyTorch, Transformers",
+        "Backend Development: Flask (Python)"
+    ],
+    "research_interests": [
+        {
+            "name":"Augmented Reality",
+            "description": "next generation of human computer interaction"
+        },
+        {
+            "name":"3D Computer Vision",
+            "description": "mixture of reality and virtual world"
+        },
+        {
+            "name":"Computer Graphics",
+            "description": "Digital Content Creation and Interaction."
+        }
+    ],
+
+
+    "姓名": "岳亮",
+    "性别": "男",
+    "小结": "目前在TCL雷鸟智能眼镜实习。",
+    "位置": {
+        "地址": "TCL Research, 深圳市, 广东省, 中国",
+        "邮编": "518000",
+        "城市": "深圳",
+        "国家代码": "CN",
+        "地区": "广东"
+    },
+    "教育经历": {
+        "硕士": {
+            "学位": "计算机科学硕士",
+            "学校": "清华大学，计算机科学与技术系",
+            "导师": "张松海",
+            "研究课题": "数字化3D室内场景构建算法",
+            "毕业时间": "2025-06"
+        },
+        "本科": {
+            "学位": "计算机科学学士（物理学双学位）",
+            "学校": "北京大学，信息科学技术学院",
+            "毕业时间": "2022-06"
+        }
+    },
+    "实习经历": [
+        {
+            "单位": "清华大学，人工智能学院",
+            "导师": "刘淼",
+            "起始时间": "2025年6月",
+            "结束时间": "至今",
+            "角色": "研究实习生"
+        },
+        {
+            "单位": "昆仑天工",
+            "起始时间": "2025年7月",
+            "结束时间": "2025年9月",
+            "项目": "世界模型",
+            "详情": "使用SEKAI导航数据集对导航世界模型进行微调，评估并比较其在熟悉/半熟悉/不熟悉场景下的表现。"
+        },
+        {
+            "单位": "雷鸟智能眼镜，TCL",
+            "起始时间": "2025年10月",
+            "结束时间": "至今",
+            "项目": "个人第一视角视频助手",
+            "详情": "构建一个个人第一视角视频助手系统，重点关注记忆功能。该系统支持记忆构建和记忆检索以回答问题。"
+        }
+    ],
+    "发表": [
+        {
+            "作者": "岳亮, 谈浩, 黄俊凯, 张少魁",
+            "标题": "数字化3D室内场景构建综述",
+            "刊物": "图像与图形学报",
+            "年份": 2024
+        },
+        {
+            "作者": "张少魁, 黄俊凯, 岳亮, 张嘉彤, 刘佳鸿, 赖宇坤, 张松海",
+            "标题": "SceneExpander: 用于交互式平面图编辑的实时场景合成",
+            "刊物": "ACM Multimedia",
+            "年份": 2024
+        },
+        {
+            "作者": "岳亮, 张少魁, 袁琳, 陈逸涛, 周子睿, 张松海",
+            "标题": "通过结合室内场景特征的扩散模型合成3D场景",
+            "刊物": "ACM Multimedia",
+            "年份": 2025
+        },
+        {
+            "作者": "张少魁, 岳亮, 朱晗希, 张浩然, 张松海",
+            "标题": "SceneCluster: 通过家具对象群集进行交互式场景合成",
+            "刊物": "TVCG",
+            "年份": 2025
+        }
+    ],
+    "项目经历": [
+        {
+            "标题": "使用第一视角视频数据微调多模态大语言模型",
+            "描述": "使用第一视角视频数据微调多模态大语言模型，以增强其理解和推理第一人称视觉信息的能力。",
+            "起始时间": "2026年1月",
+            "结束时间": "至今"
+        },
+        {
+            "标题": "个人第一视角视频助手",
+            "描述": "构建一个个人第一视角视频助手系统，重点关注记忆功能。该系统支持记忆构建和记忆检索以回答问题。",
+            "起始时间": "2025年10月",
+            "结束时间": "至今"
+        },
+        {
+            "标题": "使用新数据集微调导航世界模型",
+            "描述": "使用SEKAI导航数据集对导航世界模型进行微调，评估并比较其在熟悉/半熟悉/不熟悉场景下的表现。",
+            "起始时间": "2025年7月",
+            "结束时间": "2025年9月"
+        },
+        {
+            "标题": "基于场的室内场景优化方法",
+            "描述": "我们将室内场景中的“物理约束”“布局合理性”等多种特征进行整合，构建一个指导物体布局优化的“场”。",
+            "起始时间": "2024年11月",
+            "结束时间": "2025年4月"
+        },
+        {
+            "标题": "室内场景布局语义及数据集扩充",
+            "描述": "数字化室内场景是复杂的数据结构，现有数据集在数量和多样性上均不足以支持深度生成模型的训练。我们旨在对室内场景中的“物体关系”“功能组”等语义进行建模，以扩充现有的室内场景数据集，提高其在深度生成模型训练中的有效性。",
+            "起始时间": "2024年7月",
+            "结束时间": "2024年11月"
+        }
+    ],
+    "研究兴趣": [
+        "增强现实",
+        "三维计算机视觉",
+        "计算机图形学"
+    ]
+}

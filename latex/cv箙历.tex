@@ -1,0 +1,130 @@
+\documentclass[a4paper,10pt]{ctexart}
+\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+\usepackage{enumitem, graphicx, hyperref}
+\usepackage{xcolor}
+\usepackage{eso-pic,transparent}
+
+\AddToShipoutPicture{
+    \AtPageLowerLeft{
+        \raisebox{0.25\paperheight}{ % 调整此值可改变垂直位置
+            \hspace{0.1\paperwidth} % 调整此值可改变水平位置
+            \includegraphics[width=0.80\paperwidth]{logo 素材.jpg} % 替换为你的背景图片文件
+        }
+    }
+}
+
+\begin{document}
+
+\pagestyle{empty}
+
+\begin{center}
+    \begin{minipage}{0.75\textwidth}
+        {\LARGE \textbf{简 \quad 历}}\\ %\\  
+        {\large 姓名: 岳亮 \quad\quad\quad 性别:男  \quad\quad\quad 出生日期: 2000.02.04 \\  户籍地: 北京市西城区 \\  邮箱: yueliang200024@gmail.com ( 电话:17801014228 ) %\\ 电话: 17801014228 
+        }\\
+        {\large GitHub: \href{https://github.com/Philip-2000}{https://github.com/Philip-2000} }
+    \end{minipage}
+    \begin{minipage}{0.20\textwidth}
+        \begin{flushright}
+            \includegraphics[width=2.0cm]{IMG_2160.jpg} % 请将 "yourphoto.jpg" 替换为你的照片文件名
+        \end{flushright}
+    \end{minipage}
+\end{center}
+
+\hrule
+
+\section*{教育背景}
+\textbf{清华大学，计算机科学与技术系}\\
+\textit{计算机科学硕士} \hfill {预计毕业时间: 2025年6月}\\
+师从张松海教授，在图形学与几何计算实验室进行“数字三维室内场景构建算法”方面的研究。
+
+\vspace{1em}
+\textbf{北京大学，信息科学技术学院}\\
+\textit{计算机科学学士，物理学双学位} \hfill {毕业时间: 2022年6月}\\
+相关课程: 数学分析，计算机图形学，人工智能，操作系统等\\
+
+\hrule
+
+\section*{发表论文}
+\begin{itemize}[leftmargin=*]
+    \item 岳亮，谈皓，黄俊凯，张少魁。 \textbf{数字三维室内场景构建综述}, 中国图像图形学报, 2024。
+    \item 张少魁，黄俊凯，岳亮，张嘉彤，刘佳鸿，赖宇坤，张松海。 \textbf{SceneExpander: 用于交互式平面图编辑的实时场景合成}, ACM Multimedia, 2024。 \href{https://dl.acm.org/doi/10.1145/3664647.3680798}{doi:10.1145/3664647.3680798}
+    \item 岳亮，张少魁，袁琳，陈逸涛，周子睿，张松海。 \textbf{通过结合室内场景特征的扩散模型合成3D场景}, ACM Multimedia, 2025。 \href{https://dl.acm.org/doi/10.1145/3746027.3754832}{doi:10.1145/3746027.3754832}
+    \item 张少魁，岳亮，朱晗希，张浩然，张松海。 \textbf{SceneCluster: 通过家具对象群集进行交互式场景合成}, IEEE TVCG, 2025。 \href{https://ieeexplore.ieee.org/document/11260934}{doi:10.1109/TVCG.2025.3634829}
+\end{itemize}
+
+\hrule
+
+\section*{实习经历}
+\begin{itemize}[leftmargin=*]
+    \item 清华大学，人工智能学院 — 研究实习生（导师：刘淼）。2025年6月 — 至今。
+    \item 昆仑天工 — 项目：“世界模型”。2025年7月 — 2025年9月。（微调导航世界模型，使用新导航数据集进行训练与在熟悉/半熟悉/不熟悉场景上的评估比较。）
+    \item 雷鸟智能眼镜（TCL） — 项目：“个人第一视角视频助手”。2025年10月 — 至今。（构建个人化的第一视角视频助理，聚焦记忆的构建与检索，用于问答支持。）
+\end{itemize}
+
+\hrule
+
+\section*{项目经历}
+
+\textbf{基于视点和图像的动态渲染加速} | \textit{Dynamic Acceleration for Rendering Based on Focal Points}\\
+角色：\textbf{项目负责人} | 时间： \textit{2021年7月 - 2021年11月} | 技术栈：C++，OpenGL，Nvidia VRS\\
+通过分析待渲染图像的亮度对比度、用户视点、历史渲染图像等信息，我们可以尽可能地降低用户不易感知的区域的图像分辨率，以提升VR交互过程中的渲染效率。\\
+
+\textbf{服务于阅读器在线标注的后端系统} | \textit{Backend System Serving Online Notating on Paper Readers}\\
+角色：\textbf{后端开发} | 时间： \textit{2022年9月 - 2023年2月} | 技术：Golang，SQL\\
+我们旨在开发一款学生用的在线论文阅读器。同学们可以在论文中和论文之间做出标注，从而挖掘和讨论信息之间的关联。我主要负责的是将标注的信息整理之后，存放于后端数据库的过程的代码模块。\\
+
+\textbf{光学神经网络模拟训练的可视化工具} | \textit{Visualization Tools for Optical Neural Network Training}\\
+角色：\textbf{可视化内容开发} | 时间： \textit{2023年5月 - 2024年5月} | 技术栈：Flask，Socketio，HTML，D3.js \\
+此项目旨在将光学神经网络训练过程中的日志、训练批次等信息利用前端程序可视化在浏览器页面上。此系统需要实时反馈网络训练状态，并支持利用浏览器端程序来提供网络输入并展示网络输出。\\
+
+\textbf{“去三维化”的室内场景交互构建方法} | \textit{"3D-Free" Interactive Indoor Scene Synthesis Method}\\
+角色：\textbf{项目负责人} | 时间： \textit{2023年2月 - 2023年9月} | 技术栈：Python，JavaScript，Three.js \\
+在室内场景交互构建的过程中，三维编辑操作是最耗时的成分。我们通过整理、分析和聚类室内场景的物体功能组的形式，使得用户只需选择功能组即可实现场景的交互构建，大幅度提升构建效率。该项目结果已整理成论文投稿至TVCG。\\
+
+\textbf{基于扩散模型的室内场景构建方法} | \textit{Indoor Scene Synthesis Methods based on Diffusion Models}\\
+角色：\textbf{项目负责人} | 时间： \textit{2023年10月 - 2024年5月} | 技术栈：Python，Pytorch，Moderngl \\
+此项目拟优化现有的“基于扩散模型的室内场景构建”方法。我们通过对网络添加“相对位置编码”、对扩散过程添加“分类指导器”等方式，显式描述了室内场景的物体和房间语义，已提升模型的构建效果。
+\\
+
+\textbf{室内场景语义构建与数据库扩增} | \textit{Semantics for Indoor Scene Layout and Dataset Augmentation}\\
+角色：\textbf{项目负责人} | 时间： \textit{2024年7月 - 2024年11月} | 技术栈：Python，NumPy，Pyplot \\
+数字室内场景作为一项复杂的数据结构，目前数据库的数据量和丰富性远不足以支撑深度生成式模型的训练过程。我们试图对室内场景的“物体间关系”、“功能组”等语义建模，从而扩增现有的室内场景数据库，以提升其训练深度生成式模型的结果。%该项目结果已整理成论文投稿至CVPR 2025。
+\\
+
+\textbf{基于场的大型室内场景优化构建} | \textit{Large-Scale Indoor Scene Optimization Methods based on Fields}\\  
+角色：\textbf{项目负责人} | 时间： \textit{2024年11月 - 2025年1月} | 技术栈：Python，NumPy，Pyplot \\
+我们整合了室内场景中的“物理约束”、“布局合理性”等多项特征，构建了一种用于指导物体布局优化的“场”。此基于场的优化构建方法已整理成论文，拟投稿至ACM Multimedia 2025。\\
+
+\hrule
+
+\section*{技能}
+\begin{itemize}[leftmargin=*]
+    \item 计算机图形学: 基于HTML/JavaScript的三维渲染库Three.js；基础图形库OpenGL等
+    \item 机器学习：基于Python的机器学习库Tensorflow，Pytorch等
+    \item 数据可视化：基于Python的数据可视化库Matplotlib；基于HTML/JavaScript的数据可视化库D3.js
+    \item 后端服务: 基于Python的服务端库Flask等
+\end{itemize}
+
+\hrule
+
+\section*{研究兴趣}
+\begin{itemize}[leftmargin=*]
+    \item 增强现实
+    \item 三维计算机视觉
+    \item 计算机图形学
+\end{itemize}
+
+\hrule
+
+\section*{社会工作等}
+\begin{itemize}[leftmargin=*]
+    \item 本科期间，每年都前往多个院系参与“129”活动的组织和训练指导工作。于2019年10月获得“北京大学优秀学生干部（校级）"称号。
+    \item 计算机系团委组织部骨干成员，负责多项活动组织策划工作。
+    \item 参与清华大学教育研究院的“教学能力提升”项目，在选修若干教育类课程的同时，担任过2022-2023学年春季学期“微积分A-II”课程助教，负责每周习题课讲解和评卷等工作。
+    \item 2022年至2025年期间，在“王道”机构担任计算机考研助教的工作，制作20余小时的视频课程，累计辅导学生超百人。
+\end{itemize}
+
+\hrule
+
+\end{document}
