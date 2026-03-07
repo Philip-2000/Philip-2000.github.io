@@ -1,0 +1,596 @@
+SERVER_INFO="backup file, not belonging to any server"
+# server specific information                     #
+# not to update with file test                    #
+###################################################
+
+
+# ~/.bashrc: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# for examples
+
+
+###################################################
+# Custom bashrc for philip                        #
+# 2025-10-21                                      #
+# Customize your environment here                 #
+                                                  #
+# derive server name from SERVER_INFO (text before the first ':')
+export SERVER_NAME="$(printf '%s' "$SERVER_INFO" | awk -F: '{print $1}' | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')"
+: "${SERVER_NAME:=RN}"       # fallback to RN if empty
+export USER_NAME="yl"         # user name         #
+                                                  #
+export YL="/mnt/data/yl"  # yl space              # 
+export C="$YL/C" # code disk                      # 
+export B="$C/B" # baseline folder                 #
+export UTIL="$C/util" # utils folder              #
+export T="$C/temp"    # temp folder               #
+                                                  #
+export D="$YL/D" # data disk                      #
+export W="$YL/W" # work disk                      #
+export X="/mnt/data_oss/raw_data" # raw data disk #
+export R="/mnt/data/raw_data" # raw data disk     #
+export L="/mnt/data/models" # large models        #
+export P="/pretrained"    # pretrained weights    #
+export HF_ENDPOINT="https://hf-mirror.com"        #
+                                                  #
+export CONDA_ROOT="$YL/miniconda3"                #
+                                                  #
+#Currently Frequently Used Paths                  #
+export ECL="$C/EgoCL"                             #
+export ECLE="$ECL/EgoCL"                          #
+export ECLS="$ECL/scripts"                        #
+export WORK="$ECLS/experiment/experiment"         #
+export VIS="$ECLS/experiment/visualize"           #
+export AUTO="$ECLS/experiment/auto"               #
+export CAT="$UTIL/EgoCat/sh"                      #
+export MyLm="$C/MyLm"                             #
+export MyLmS="$MyLm/scripts"                      #
+export TEST="$MyLmS/LmBenches/Test"               #
+export CALL="$MyLmS/LmServe/LmServe"              #
+export EVAL="$MyLmS/LmEvaluate/Evaluate"          #
+export MAI="$B/MemoriesAI"                        #
+                                                  #
+export EgoLife="$B/EgoLife"                       #
+export EgoGPT="$EgoLife/EgoGPT"                   #
+export EgoRAG="$EgoLife/EgoRAG"                   #
+export GEM_HOME="$HOME/gems"                      #
+export PATH="$GEM_HOME/bin:$PATH"
+                                                  #
+#Currently Frequently Used Command Combinations   #
+alias fserv="for_serve"                           #
+alias fmemo="for_memory"                          #
+alias feval="for_eval"                            #
+alias memo="python experiment.py -e "             #
+alias memot="python experiment.py -e EgoLifeQA_J -m Test"
+alias ans="python answering.py -e "               #
+alias anst="python answering.py -e EgoLifeQA_J -m" 
+                                                  #
+_PV_BASE=(YL C B UTIL T EgoLife EgoGPT EgoRAG D W R L P X HOME WORK VIS TEST MAI CALL EVAL MyLm MyLmS ECLS ECLE ECL AUTO CAT) #
+                                                  #
+# Define SSHFS entries: name|user@host:/remote/path|/local/mountpoint|extra_opts
+SSHFS_CONFIG=()                                   #
+#SSHFS_CONFIG+=("srv1|yl@10.0.0.10:/data|/mnt/sshfs/srv1|port=22")
+                                                  #
+#LLM API KEYS                                     #
+#export QWEN_API_KEY='sk-????????' #my own
+export AZURE_API_KEY="????????"
+export AZURE_API_ENDPOINT="https://foundationmodeldepartment.openai.azure.com/openai/v1"
+export QWEN_API_KEY='sk-????????'
+export DEEPSEEK_API_KEY='sk-????????'
+export OPENAI_API_KEY='sk-????????'
+export HUGGING_FACE_HUB_TOKEN="hf_????????"
+export MEMORIES_AI_API_KEY="sk-????????"  #my own
+#export MEMORIES_AI_API_KEY="sk-????????" #rayneo, disabled
+                                                  #
+# Mirror Sources                                  #
+export TUNA_PYPI="https://pypi.tuna.tsinghua.edu.cn/simple"
+export ALI_PYPI="https://mirrors.aliyun.com/pypi/simple/" 
+export PIP_INDEX_URL=$ALI_PYPI                    #
+export UV_DEFAULT_INDEX=$ALI_PYPI                 #
+                                                  #
+# some more ls aliases                            #
+alias ll='ls -alF'                                #
+alias la='ls -A'                                  #
+alias l='ls -CF'                                  #
+alias lsn='ls | wc -l'                            #
+alias ta='tmux_attach_strong'                     #
+alias tn='tmux new-session -s'                    #
+alias tk='tmux kill-session -t'                   #
+alias tl='tmux list-sessions'                     #
+alias ca='conda activate'                         #
+alias pa='pip_activate'                           #
+alias tca='tmux_conda_activate'                   #
+alias cod='conda deactivate'                      #
+alias zhuang='sudo apt-get install'               #
+alias ns='nvidia-smi'                             #
+alias fresh='source ~/.bashrc'                    #
+alias freq='print_freqs'                          #
+alias ac='activate_cuda'                          #
+# SSHFS mount aliases                             #
+alias sfs='sfs_mount'                             #
+alias sfu='sfs_umount'                            #
+alias sfl='sfs_list'                              #
+alias sfr='sfs_remount'                           #
+alias sfa='sfs_mount_all'                         #
+alias mark='export er="$(pwd)"'                   #
+alias go='cd $er'                                 #
+alias marks='print_marks'                         #
+alias back='cd - >/dev/null 2>&1'                 #
+alias pinl='pip install'                          #
+alias du1='du -h --max-depth=1'                   #
+alias dfh='df -h'                                 #
+alias fsize='ls -lh'                              # 
+alias gce='git clone'                             #
+alias gpl='git pull'                              #
+alias gps='git push'                              #
+alias gcm='git commit -m'                         #
+alias gst='git status'                            #
+alias ga='git add'                                #
+alias gau='git add -u'                            #
+alias ggg='g_g_g'                                 #
+alias hfl='hf auth login --token $HUGGING_FACE_HUB_TOKEN' #
+alias hfu='hf upload'                             #
+alias hfd='hf download'                           #
+alias hfdd='hf_down_dataset'                      #
+alias hfdm='hf_down_model'                        #
+alias upd='update_bashrc'                         #
+alias sinfo='echo "$SERVER_INFO"'                 #
+alias ssinfo='set_server_info'                    #
+                                                  #
+###################################################
+
+for_serve(){
+    cd $CALL
+    tca try
+}
+
+for_memory(){
+    cd $WORK
+    tca egocl
+}
+
+for_eval(){
+    cd $EVAL
+    tca try
+}
+
+tmux_attach_strong(){
+    local session_name="$1"   
+    #check if such session exists, using tmux ls
+    if tmux ls | grep -q "^${session_name}:"; then
+        tmux attach-session -t "$session_name"
+    else
+        tmux new-session -s "$session_name"
+    fi
+}
+
+hf_down_dataset(){
+    # download dataset user/repo_name from huggingface hub, and put it into ./repo_name
+    local suffix="$1"
+    local repo_name=$(echo "$suffix" | awk -F'/' '{print $2}')
+    hf download "$suffix" --repo-type=dataset  --local-dir  "./$repo_name"
+}
+
+hf_down_model(){
+    # download model user/repo_name from huggingface hub, and put it into ./repo_name
+    local suffix="$1"
+    local repo_name=$(echo "$suffix" | awk -F'/' '{print $2}')
+    hf download "$suffix" --local-dir  "./$repo_name"
+}
+
+update_bashrc(){
+    L=1
+    #reserve the first line of ~/.bashrc (maybe not necessary, so increase L if needed)
+    head -n $L ~/.bashrc > ~/.bashrc_tmp
+    #update the newer version of bashrc from $YL
+    tail -n +$((L+1)) $YL/.bashrc >> ~/.bashrc_tmp
+    mv ~/.bashrc_tmp ~/.bashrc
+    source ~/.bashrc
+    rm -f ~/.bashrc_tmp
+}
+
+set_server_info(){
+    SERVER_INFO="$1"
+    FIRST_LINE="SERVER_INFO=\"$SERVER_INFO\" #    "
+    # Update the first line of ~/.bashrc
+    sed -i "1s|.*|$FIRST_LINE|" ~/.bashrc
+    source ~/.bashrc
+}
+
+g_g_g(){
+    git add -u && git commit -m "$1" && git push
+}
+
+alias markb='export erb="$(pwd)"'
+alias gob='cd $erb'
+alias markc='export erc="$(pwd)"'
+alias goc='cd $erc'
+alias markd='export erd="$(pwd)"'
+alias god='cd $erd'
+print_marks() {
+    echo "Marked Directories:"
+    [[ -n "$er" ]] && echo "  er: $er"
+    [[ -n "$erb" ]] && echo "  erb: $erb"
+    [[ -n "$erc" ]] && echo "  erc: $erc"
+    [[ -n "$erd" ]] && echo "  erd: $erd"
+}
+
+backup_oss(){
+    # support comma-separated list in $1, move each dir from $X to $R one by one
+    IFS=',' read -ra _dirs <<< "$1"
+    for _d in "${_dirs[@]}"; do
+        # trim whitespace
+        _d="$(echo "$_d" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')"
+        [ -z "$_d" ] && continue
+        # er="$PWD"
+        # cd "$X"
+        # mkdir -p "$_d"
+        # #mkdir -p "$(dirname "$X/$_d")"
+        # cd "$er"
+        if [ -d "$X" ]; then
+            if cp -r "$R/$_d" "$X"; then
+                echo "✅ Moved: $_d"
+            else
+                echo "❌ Failed to move: $_d"
+            fi
+        else
+            echo "❌ Directory '$X' does not exist."
+        fi
+    done
+}
+
+upload_oss(){
+    # support comma-separated list in $1, move each dir from $X to $R one by one
+    IFS=',' read -ra _dirs <<< "$1"
+    for _d in "${_dirs[@]}"; do
+        # trim whitespace
+        _d="$(echo "$_d" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')"
+        [ -z "$_d" ] && continue
+        # er="$PWD"
+        # cd "$X"
+        # mkdir -p "$_d"
+        # #mkdir -p "$(dirname "$X/$_d")"
+        # cd "$er"
+        if [ -d "$X" ]; then
+            if cp -r "$R/$_d" "$X"; then
+                echo "✅ Moved: $_d"
+            else
+                echo "❌ Failed to move: $_d"
+            fi
+        else
+            echo "❌ Directory '$X' does not exist."
+        fi
+        if rm -rf "$R/$_d"; then
+            echo "🗑️ Deleted: $_d from $R"
+        else
+            echo "❌ Failed to delete: $_d from $R"
+        fi
+    done
+}
+
+oss_download(){
+    IFS=',' read -ra _dirs <<< "$1"
+    for _d in "${_dirs[@]}"; do
+        # trim whitespace
+        _d="$(echo "$_d" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')"
+        [ -z "$_d" ] && continue
+        #mkdir -p "$(dirname "$R/$_d")"
+        if [ -d "$R" ]; then
+            if cp -r "$X/$_d" "$R"; then
+                echo "✅ Moved: $_d"
+            else
+                echo "❌ Failed to move: $_d"
+            fi
+        else
+            echo "❌ Directory '$R' does not exist."
+        fi
+    done
+    # move dir $1 from $R to $X
+    # if [ -d "$R/$1" ]; then
+    #     mv "$R/$1" "$X/$1"
+    # else
+    #     echo "❌ Directory '$R/$1' does not exist."
+    # fi
+}
+
+
+pip_activate(){
+    #firstly check if $1 is exist in the current folder
+    if [ -f "./$1/bin/activate" ]; then
+        source "./$1/bin/activate"
+    elif [ -f "$CONDA_ROOT/envs/$1/bin/activate" ]; then
+        source "$CONDA_ROOT/envs/$1/bin/activate"
+    else
+        echo "❌ Environment '$1' not found in current directory or Conda envs."
+    fi
+}
+
+activate_cuda(){
+    export PATH="/usr/local/cuda-$1/bin${PATH:+:${PATH}}"
+    export LD_LIBRARY_PATH="/usr/local/cuda-$1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
+    export CUDA_HOME="/usr/local/cuda-$1"
+}
+
+tmux_conda_activate() {
+    #查看当前环境叫什么
+    e=$(conda info --envs | grep -v '^#' | grep '*' | awk '{print $1}')
+    if [ "$e" != "base" ]; then
+        cod
+    fi
+
+    # 使用你已有的别名进行激活
+    ca "$1"
+    
+    # 自动设置PATH路径，使用你已定义的CONDA_ROOT变量
+    export PATH="${CONDA_ROOT}/envs/$1/bin:${PATH}"
+    
+    #echo "✅ 已激活环境: $1, 并更新PATH指向: ${CONDA_ROOT}/envs/$1/bin"
+}
+
+# Build PATH_VARS sorted by the length of their resolved paths (longer first)
+PATH_VARS=()
+while read -r _len _var; do
+    PATH_VARS+=("$_var")
+done < <(
+    for _var in "${_PV_BASE[@]}"; do
+        _val="${!_var}"
+        printf "%d %s\n" "${#_val}" "$_var"
+    done | sort -nr
+)
+unset _PV_BASE _var _val _len
+
+# If not running interactively, don't do anything
+[ -z "$PS1" ] && return
+
+# don't put duplicate lines in the history. See bash(1) for more options
+# ... or force ignoredups and ignorespace
+HISTCONTROL=ignoredups:ignorespace
+
+# append to the history file, don't overwrite it
+shopt -s histappend
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+
+# make less more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
+# set variable identifying the chroot you work in (used in the prompt below)
+if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
+    debian_chroot=$(cat /etc/debian_chroot)
+fi
+
+# set a fancy prompt (non-color, unless we know we "want" color)
+case "$TERM" in
+    xterm-color) color_prompt=yes;;
+esac
+
+# uncomment for a colored prompt, if the terminal has the capability; turned
+# off by default to not distract the user: the focus in a terminal window
+# should be on the output of commands, not on the prompt
+#force_color_prompt=yes
+
+if [ -n "$force_color_prompt" ]; then
+    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+    # We have color support; assume it's compliant with Ecma-48
+    # (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+    # a case would tend to support setf rather than setaf.)
+    color_prompt=yes
+    else
+    color_prompt=
+    fi
+fi
+
+# If this is an xterm set the title to user@host:dir
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    ;;
+*)
+    ;;
+esac
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# some more ls aliases
+#alias ll='ls -alF'
+#alias la='ls -A'
+#alias l='ls -CF'
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+#if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+#    . /etc/bash_completion
+#fi
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$(${CONDA_ROOT}/bin/conda 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "${CONDA_ROOT}/etc/profile.d/conda.sh" ]; then
+        . "${CONDA_ROOT}/etc/profile.d/conda.sh"
+    else
+        export PATH="${CONDA_ROOT}/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+# 定义一个函数来缩短路径显示
+shorten_path() {
+    local path="$1"
+    # 获取所有环境变量，筛选出值为路径的变量
+    for var in ${PATH_VARS[@]} ; do
+        local value="${!var}"
+        # 检查该值是否为目录且当前路径在其下
+        if [[ -d "$value" && ("$path" == "$value"/* || "$path" == "$value" )]]; then
+            # 替换路径部分为环境变量名
+            if [[ "$var" == "HOME" ]]; then
+                echo "~${path#$value}"
+            else
+                echo $var"${path#$value}"
+            fi
+            return
+        fi
+    done
+    # 如果没有匹配的环境变量，返回原路径
+    echo "$path"
+}
+
+# 设置PS1，调用上面的函数
+set_prompt() {
+    local short_path=$(shorten_path "$PWD")
+    local conda_env=""
+    if [[ -n "$CONDA_DEFAULT_ENV" ]]; then
+        conda_env="$CONDA_DEFAULT_ENV"  # 可选：保留 Conda 环境名
+    fi
+    # 设置PS1，使用缩短后的路径
+    PS1="\[\033[01;32m\]${conda_env}\[\033[00m\]\[\033[01;34m\]>\u@${SERVER_NAME}<\[\033[00m\]\[\033[01;33m\]${short_path}\[\033[00m\]: "
+}
+
+PROMPT_COMMAND=set_prompt
+
+# if [ "$color_prompt" = yes ]; then
+#     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+# else
+#     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+# fi
+unset color_prompt force_color_prompt
+unset https_proxy http_proxy all_proxy
+#export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7891
+
+print_freqs() {
+    echo "Frequently Used Paths:"
+    for var in "${PATH_VARS[@]}"; do
+        printf "  %s: %s\n" "$var" "${!var}"
+    done
+}
+
+# Default options (append per-entry options in the 4th field, comma-separated)
+SSHFS_OPTS="-o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3,IdentityFile=$HOME/.ssh/id_rsa,StrictHostKeyChecking=accept-new,follow_symlinks,attr_timeout=2,auto_cache,compression=no,idmap=user"
+
+# Helper: get config by name
+_sfs_get_cfg() {
+    local target="$1" cfg name
+    for cfg in "${SSHFS_CONFIG[@]}"; do
+        IFS='|' read -r name _ _ _ <<< "$cfg"
+        [[ "$name" == "$target" ]] && { echo "$cfg"; return 0; }
+    done
+    return 1
+}
+
+# List entries and status
+sfs_list() {
+    local cfg name remote local_dir extra
+    for cfg in "${SSHFS_CONFIG[@]}"; do
+        IFS='|' read -r name remote local_dir extra <<< "$cfg"
+        [[ -z "$name" ]] && continue
+        if mountpoint -q "$local_dir" 2>/dev/null; then
+            printf "[mounted] %s -> %s @ %s\n" "$name" "$remote" "$local_dir"
+        else
+            printf "[off]     %s -> %s @ %s\n" "$name" "$remote" "$local_dir"
+        fi
+    done
+}
+
+# Mount one entry by name
+sfs_mount() {
+    local name="$1"
+    [[ -z "$name" ]] && { echo "usage: sfs_mount <name>"; return 2; }
+    command -v sshfs >/dev/null 2>&1 || { echo "sshfs not found"; return 1; }
+    local cfg remote local_dir extra opts
+    cfg="$(_sfs_get_cfg "$name")" || { echo "unknown entry: $name"; return 1; }
+    IFS='|' read -r _ remote local_dir extra <<< "$cfg"
+    mkdir -p "$local_dir"
+    if mountpoint -q "$local_dir" 2>/dev/null; then
+        echo "already mounted: $name"
+        return 0
+    fi
+    opts="$SSHFS_OPTS"
+    [[ -n "$extra" ]] && opts="${opts%,},$extra"
+    sshfs $opts "$remote" "$local_dir"
+}
+
+# Unmount one entry by name
+sfs_umount() {
+    local name="$1"
+    [[ -z "$name" ]] && { echo "usage: sfs_umount <name>"; return 2; }
+    local cfg local_dir
+    cfg="$(_sfs_get_cfg "$name")" || { echo "unknown entry: $name"; return 1; }
+    IFS='|' read -r _ _ local_dir _ <<< "$cfg"
+    if mountpoint -q "$local_dir" 2>/dev/null; then
+        if command -v fusermount >/dev/null 2>&1; then
+            fusermount -u "$local_dir" || sudo umount "$local_dir"
+        else
+            umount "$local_dir"
+        fi
+    else
+        echo "not mounted: $name"
+    fi
+}
+
+# Remount one entry
+sfs_remount() { sfs_umount "$1" && sfs_mount "$1"; }
+
+# Mount all defined entries
+sfs_mount_all() {
+    local cfg name
+    for cfg in "${SSHFS_CONFIG[@]}"; do
+        IFS='|' read -r name _ _ _ <<< "$cfg"
+        [[ -n "$name" ]] && sfs_mount "$name"
+    done
+}
+
+# Completions for names
+_sfs_complete_names() {
+    local names=() cfg name
+    for cfg in "${SSHFS_CONFIG[@]}"; do
+        IFS='|' read -r name _ _ _ <<< "$cfg"
+        [[ -n "$name" ]] && names+=("$name")
+    done
+    COMPREPLY=( $(compgen -W "${names[*]}" -- "${COMP_WORDS[COMP_CWORD]}") )
+}
+complete -F _sfs_complete_names sfs_mount sfs_umount sfs_remount
+
+# Export local mount paths as variables and include in PATH_VARS for prompt shortening
+for _cfg in "${SSHFS_CONFIG[@]}"; do
+    IFS='|' read -r _name _remote _local _extra <<< "$_cfg"
+    [[ -z "$_name" || -z "$_local" ]] && continue
+    _var="S_${_name//[^A-Za-z0-9]/_}"
+    export "${_var}=${_local}"
+    PATH_VARS+=("$_var")
+done
+
+# Automount on shell start if desired: export SSHFS_AUTOMOUNT=1 before sourcing
+: "${SSHFS_AUTOMOUNT:=0}"
+if [[ "$SSHFS_AUTOMOUNT" == "1" && ${#SSHFS_CONFIG[@]} -gt 0 ]]; then
+    sfs_mount_all >/dev/null 2>&1 &
+fi
+
