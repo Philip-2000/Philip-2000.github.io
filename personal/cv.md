@@ -5,7 +5,7 @@
 # Liang Yue
 
 **Ph.D. Student, Nanjing University**<br>
-Email: [yueliang200024@gmail.com](mailto:yueliang200024@gmail.com) · [GitHub](https://github.com/Philip-2000) · [Google Scholar](https://scholar.google.com/citations?user=PS_CX0AAAAAJ) · [ORCID](https://orcid.org/0009-0006-2683-7441)<br>
+Email: [yueliang200024@gmail.com](mailto:yueliang200024@gmail.com) · [GitHub](https://github.com/Philip-2000) · [ORCID](https://orcid.org/0009-0006-2683-7441)<br>
 [中文简历](https://philip-2000.github.io/jianli/) · [Homepage](https://philip-2000.github.io/cv/)
 
 My research interests include complex 3D generation, part decomposition and printable assembly, world models, 3D vision, and computer graphics.
