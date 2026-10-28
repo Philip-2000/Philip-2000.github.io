@@ -14,7 +14,7 @@ author_profile: true
 
 **南京大学在读博士研究生**<br>
 邮箱：[yueliang200024@gmail.com](mailto:yueliang200024@gmail.com) · [GitHub](https://github.com/Philip-2000) · [Google Scholar](https://scholar.google.com/citations?user=PS_CX0AAAAAJ) · [ORCID](https://orcid.org/0009-0006-2683-7441)<br>
-[英文简历](/cv/) · [个人主页](/)
+[英文简历](/cv/) · [个人主页](/jianli/)
 
 研究关注复杂三维模型的生成、分件与可打印装配，以及世界模型、三维视觉与计算机图形学。
 
