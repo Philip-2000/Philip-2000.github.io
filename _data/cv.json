@@ -1,16 +1,16 @@
 {
   "basics": {
     "name": "Liang Yue",
-    "email": "none@example.org",
+    "email": "yueliang200024@gmail.com",
     "phone": "",
     "website": "https://philip-2000.github.io",
-    "summary": "interning at RayNeo (TCL)",
+    "summary": "Ph.D. student at Nanjing University since September 2026, advised by Xiaoxiao Long and Xun Cao. Research interests include complex 3D generation, printable assembly, and world models.",
     "location": {
-      "address": "",
-      "postalCode": "581000",
-      "city": "Shenzhen",
+      "address": "Suzhou, Jiangsu, China",
+      "postalCode": "",
+      "city": "Suzhou",
       "countryCode": "CN",
-      "region": "Guangdong"
+      "region": "Jiangsu"
     },
     "profiles": [
       {
@@ -20,133 +20,164 @@
       },
       {
         "network": "ORCID",
-        "username": "",
+        "username": "0009-0006-2683-7441",
         "url": "https://orcid.org/0009-0006-2683-7441"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "Philip-2000",
+        "url": "https://github.com/Philip-2000"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "Horizon Robotics",
+      "position": "Research Intern",
+      "startDate": "2026-05",
+      "endDate": "2026-10",
+      "summary": "Worked on world-action models for autonomous driving.",
+      "highlights": [
+        "Location: Shanghai."
+      ]
+    },
+    {
+      "company": "RayNeo (TCL)",
+      "position": "Research Intern",
+      "startDate": "2025-10",
+      "endDate": "2026-05",
+      "summary": "Egocentric video assistants, memory construction and retrieval."
+    },
+    {
+      "company": "Tsinghua University, College of Artificial Intelligence",
+      "position": "Research Assistant",
+      "startDate": "2025-06",
+      "endDate": "2026-03",
+      "summary": "Advisor: Miao Liu."
+    },
+    {
+      "company": "Kunlun Skyworks",
+      "position": "Research Intern",
+      "startDate": "2025-07",
+      "endDate": "2025-09",
+      "summary": "Fine-tuned a navigation world model using SEKAI and evaluated familiar, partially familiar, and unseen environments."
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "institution": "Nanjing University",
+      "area": "School of Electronic Science and Engineering",
+      "studyType": "Ph.D. (in progress)",
+      "startDate": "2026-09",
+      "endDate": "",
+      "courses": [
+        "Advisors: Xiaoxiao Long and Xun Cao.",
+        "Research: printable 3D generation and assembly design."
+      ]
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
+      "institution": "Tsinghua University",
+      "area": "Computer Science",
+      "studyType": "M.S.",
+      "startDate": "2022",
+      "endDate": "2025-06",
+      "courses": [
+        "Advisor: Song-Hai Zhang."
+      ]
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
+      "institution": "Peking University",
+      "area": "Computer Science; double major in Physics",
+      "studyType": "B.S.",
+      "startDate": "2018",
+      "endDate": "2022-06",
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+    {
+      "name": "Programming and frameworks",
+      "keywords": [
+        "PyTorch",
+        "Transformers",
+        "Three.js",
+        "OpenGL",
+        "Python",
+        "Flask"
+      ]
+    }
+  ],
   "languages": [],
-  "interests": [],
-  "references": [],
+  "interests": [
+    {
+      "name": "3D generation and printable assembly"
+    },
+    {
+      "name": "World models"
+    },
+    {
+      "name": "3D computer vision and computer graphics"
+    }
+  ],
+  "projects": [
+    {
+      "name": "面向复杂模型的可打印三维生成与装配设计 / Printable 3D Generation and Assembly Design",
+      "startDate": "2026-10",
+      "endDate": "",
+      "summary": "Ongoing research on complex 3D models, part decomposition, and interlocking connector design for printing and assembly.",
+      "highlights": [
+        "Focus: assembly feasibility, ease of assembly, connection reliability, and stability."
+      ]
+    },
+    {
+      "name": "CAI-WM",
+      "startDate": "2026-06",
+      "endDate": "2026-09",
+      "summary": "Contributed evaluation management, experimental result recording, and training-data production.",
+      "highlights": [
+        "WorldArena 2.0 Track 1, snapshot 2026-09-18: 70.07 overall, 2.26 points behind the leader.",
+        "Trajectory Accuracy: 5th; Physics Adherence: 6th; Aesthetic Quality: 9th, among 81 entries."
+      ],
+      "url": "https://huggingface.co/spaces/WorldArena/WorldArena2.0/tree/7f1bc898ab88a950da1aabb9d08f235bd2e743cc"
+    },
+    {
+      "name": "Life-Logging Video Privacy–Utility Trade-off (RayNeo period)",
+      "startDate": "2026-03",
+      "endDate": "2026-04",
+      "summary": "Co-authored Position: Life-Logging Video Streams Make the Privacy–Utility Trade-off Inevitable; submitted to the NeurIPS 2026 Position Paper Track.",
+      "url": "https://openreview.net/forum?id=nKQfPHaJIf"
+    }
+  ],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "A Survey on Digital 3D Indoor Scene Construction",
+      "publisher": "Journal of Image and Graphics",
+      "releaseDate": "2024",
+      "summary": "Authors and publication information retained from the existing CV."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "SceneExpander: Real-Time Scene Synthesis for Interactive Floor Plan Editing",
+      "publisher": "ACM Multimedia",
+      "releaseDate": "2024",
+      "website": "https://dl.acm.org/doi/10.1145/3664647.3680798",
+      "summary": ""
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "Synthesizing 3D Scenes via Diffusion Model that Incorporates Indoor Scene Characteristics",
+      "publisher": "ACM Multimedia",
+      "releaseDate": "2025",
+      "website": "https://dl.acm.org/doi/10.1145/3746027.3754832",
+      "summary": ""
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "SceneCluster: Interactive Scene Synthesis by Clustering Groups of Furniture Objects",
+      "publisher": "TVCG",
+      "releaseDate": "2025",
+      "website": "https://ieeexplore.ieee.org/document/11260934",
+      "summary": ""
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "presentations": [],
+  "teaching": [],
+  "portfolio": []
 }
