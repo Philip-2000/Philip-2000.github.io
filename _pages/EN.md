@@ -5,6 +5,11 @@ layout: single
 author_profile: true
 ---
 
+### 2026-10-28 · Suzhou
+
+
+---
+
 ### 2026-10-27 · Suzhou
 
 So much has happened this year. From Beijing to Shenzhen, then Shanghai, and finally Suzhou, each move brought an entirely different kind of work. It almost tore me apart. Along the way, I also came face to face with my own limitations: little experience training models, a muddled approach to getting things done, an undeveloped sense of research taste, and a pace that was never quite fast enough. Before graduating, I had anticipated that I might not be capable enough, but it was only a vague notion then. Having reality confirm it was still deeply painful.
