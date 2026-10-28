@@ -12,13 +12,13 @@ My research interests include complex 3D generation, part decomposition and prin
 
 ## Education
 
-**Nanjing University, School of Electronic Science and Engineering | Ph.D. Student**　2026.09–Now<br>
+**Nanjing University, School of Electronic Science and Engineering · Ph.D. Student**　2026.09–Now<br>
 Advisors: Xiaoxiao Long and Xun Cao. Research: printable 3D generation and assembly design.
 
-**Tsinghua University, Department of Computer Science and Technology | M.S. in Computer Science**　2022–2025.06<br>
+**Tsinghua University, Department of Computer Science and Technology · M.S. in Computer Science**　2022–2025.06<br>
 Advisor: Song-Hai Zhang. Research: digital 3D indoor scene construction algorithms.
 
-**Peking University, School of Information Science and Technology | B.S. in Computer Science; Double Major in Physics**　2018–2022.06
+**Peking University, School of Information Science and Technology · B.S. in Computer Science; Double Major in Physics**　2018–2022.06
 
 ## Recent Research and Projects
 
@@ -41,10 +41,10 @@ Co-authored *Position: Life-Logging Video Streams Make the Privacy–Utility Tra
 
 ## Internships and Research Experience
 
-- **Horizon Robotics | Research Intern, Shanghai**　2026.05–2026.10. Contributed to world-action model development for autonomous driving.
-- **RayNeo Smart Glasses (TCL) | Research Intern**　2025.10–2026.05. Worked on personal egocentric video assistants, memory construction, and retrieval. The privacy–utility paper above was completed during the RayNeo period.
-- **Tsinghua University, College of Artificial Intelligence | Research Assistant**　2025.06–2026.03. Advisor: Miao Liu.
-- **Kunlun Skyworks | Research Intern**　2025.07–2025.09. Fine-tuned a navigation world model using SEKAI and evaluated familiar, partially familiar, and unseen environments.
+- **Horizon Robotics · Research Intern, Shanghai**　2026.05–2026.10. Contributed to world-action model development for autonomous driving.
+- **RayNeo Smart Glasses (TCL) · Research Intern**　2025.10–2026.05. Worked on personal egocentric video assistants, memory construction, and retrieval. The privacy–utility paper above was completed during the RayNeo period.
+- **Tsinghua University, College of Artificial Intelligence · Research Assistant**　2025.06–2026.03. Advisor: Miao Liu.
+- **Kunlun Skyworks · Research Intern**　2025.07–2025.09. Fine-tuned a navigation world model using SEKAI and evaluated familiar, partially familiar, and unseen environments.
 
 ## Publications
 
