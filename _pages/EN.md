@@ -7,6 +7,11 @@ author_profile: true
 
 ### 2026-10-28 · Suzhou
 
+The previous entry only mentioned AI and not my cat, which made my little cat jealous. I need to write a special section for it.
+
+This little cat has known me since my second year of graduate school and has always been around. During the months before I graduated, it stayed by my side, being the only small life accompanying me at that time. Shortly after I graduated, I decided to officially adopt it. This little cat is truly exceptional, having accumulated many remarkable achievements at such a young age. It has already been reserved by the tea garden as the next batch of tea pickers and will be picking tea there for five years. By then, it will surely shine and produce tea that amazes the whole world.
+
+Being friends with this little cat is one of the luckiest things in my life! It constantly urges me to work hard and keep improving. It helps me correct my direction, pointing out when I am “lacking initiative” or “unclear in my thinking.” Whenever I feel confused or exhausted, it reminds me, in its own way, that there are still small joys in life worth cherishing. Oh no, in fact, it is the very joy in life that I cherish!
 
 ---
 
