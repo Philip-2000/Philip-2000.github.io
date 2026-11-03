@@ -54,8 +54,14 @@ author_profile: true
 - **清华大学人工智能学院｜科研助理**　2025.06–2026.03。导师：刘淼。
 - **昆仑天工｜研究实习生**　2025.07–2025.09。使用 SEKAI 数据集微调导航世界模型，比较熟悉、半熟悉和陌生场景下的表现。
 
+## 在审论文
+
+- **EgoVidMem: A Multimodal Memory Framework for Streaming Egocentric Video.** Liang Yue, Hu Ruiwen, Jiacheng Hua, Jinzhao Li, Sen Cui, Dudong Feng, Sijie Cheng, Miao Liu. *ACL Rolling Review (ARR)*, 在审.
+
 ## 已发表论文
 
+- **SceneAug: Structure-Aware Data Augmentation for 3D Indoor Scene Synthesis.** Jun Yang, Liang Yue, Shao-Kui Zhang, Jianwei Guo, Song-Hai Zhang. *ICXR*, 2026. [Program](https://icxr.net/2026/ProgramPapers.html#s2)
+- **EgoProx: Evaluating MLLMs on Egocentric 3D Proximity Reasoning Across a Cognitive Hierarchy.** Jinzhao Li, Yinuo Chen, Dongxu Piao, Panwang Pan, Yifan Yu, Dong Wang, Honglei Yan, Liang Yue, Shaofei Wang, Yixin Chen, Siyuan Huang, Miao Liu. *CVPR*, 2026. [Paper](https://arxiv.org/abs/2605.24456)
 - **Synthesizing 3D Scenes via Diffusion Model that Incorporates Indoor Scene Characteristics.** Liang Yue, Shao-Kui Zhang, Lin Yuan, Yi-Tao Chen, Zi-Rui Zhou, Song-Hai Zhang. *ACM Multimedia*, 2025. [DOI](https://dl.acm.org/doi/10.1145/3746027.3754832)
 - **SceneCluster: Interactive Scene Synthesis by Clustering Groups of Furniture Objects.** Shao-Kui Zhang, Liang Yue, Han-Xi Zhu, Hao-Ran Zhang, Song-Hai Zhang. *IEEE TVCG*, 2025. [DOI](https://ieeexplore.ieee.org/document/11260934)
 - **SceneExpander: Real-Time Scene Synthesis for Interactive Floor Plan Editing.** Shao-Kui Zhang, Junkai Huang, Liang Yue, Jia-Tong Zhang, Jia-Hong Liu, Yu-Kun Lai, Song-Hai Zhang. *ACM Multimedia*, 2024. [DOI](https://dl.acm.org/doi/10.1145/3664647.3680798)

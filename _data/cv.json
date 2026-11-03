@@ -145,6 +145,26 @@
   ],
   "publications": [
     {
+      "name": "SceneAug: Structure-Aware Data Augmentation for 3D Indoor Scene Synthesis",
+      "publisher": "ICXR",
+      "releaseDate": "2026",
+      "summary": "Jun Yang, Liang Yue, Shao-Kui Zhang, Jianwei Guo, Song-Hai Zhang.",
+      "website": "https://icxr.net/2026/ProgramPapers.html#s2"
+    },
+    {
+      "name": "EgoVidMem: A Multimodal Memory Framework for Streaming Egocentric Video",
+      "publisher": "ACL Rolling Review (ARR)",
+      "releaseDate": "2026",
+      "summary": "Liang Yue, Hu Ruiwen, Jiacheng Hua, Jinzhao Li, Sen Cui, Dudong Feng, Sijie Cheng, Miao Liu. Under review."
+    },
+    {
+      "name": "EgoProx: Evaluating MLLMs on Egocentric 3D Proximity Reasoning Across a Cognitive Hierarchy",
+      "publisher": "CVPR",
+      "releaseDate": "2026",
+      "summary": "Jinzhao Li, Yinuo Chen, Dongxu Piao, Panwang Pan, Yifan Yu, Dong Wang, Honglei Yan, Liang Yue, Shaofei Wang, Yixin Chen, Siyuan Huang, Miao Liu.",
+      "website": "https://arxiv.org/abs/2605.24456"
+    },
+    {
       "name": "A Survey on Digital 3D Indoor Scene Construction",
       "publisher": "Journal of Image and Graphics",
       "releaseDate": "2024",
